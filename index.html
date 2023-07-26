@@ -72,11 +72,18 @@
         const buttons = document.querySelectorAll(".toggle-btn");
         buttons.forEach((btn) => {
             btn.addEventListener("click", () => {
+                const paraDes = document.querySelectorAll("p")
+
+                for (let indPara of paraDes) {
+
+                    indPara.classList.add("hidden")
+                }
 
 
                 const description = btn.parentElement.nextElementSibling;
 
                 description.classList.toggle("hidden")
+
 
             })
 
