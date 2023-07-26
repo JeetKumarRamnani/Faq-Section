@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <div class="Container flex flex-col justify-center items-center gap-4 w-96">
+            <h1 class="text-2xl font-bold">General Questions</h1>
+            <div class="first-faq bg-white rounded-lg shadow-md p-4 w-full">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-lg font-semibold">Faq Title 1</h2>
+                    <button class="toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-2 hidden transition-all duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Adipisci saepe, a
+                    similique incidunt, consectetur est sit perspiciatis facere repellat, dignissimos officia! Nam
+                    architecto officiis sint deserunt ut. Cum, esse omnis.</p>
+            </div>
+            <div class="second-faq bg-white rounded-lg shadow-md p-4 w-full">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-lg font-semibold">Faq Title 2</h2>
+                    <button class="toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-2 hidden transition- duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Adipisci saepe, a
+                    similique incidunt, consectetur est sit perspiciatis facere repellat, dignissimos officia! Nam
+                    architecto officiis sint deserunt ut. Cum, esse omnis.</p>
+            </div>
+            <div class="third-faq bg-white rounded-lg shadow-md p-4 w-full">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-lg font-semibold">Faq Title 3</h2>
+                    <button class="toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-2 hidden transition-all duration-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Adipisci saepe, a
+                    similique incidunt, consectetur est sit perspiciatis facere repellat, dignissimos officia! Nam
+                    architecto officiis sint deserunt ut. Cum, esse omnis.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const buttons = document.querySelectorAll(".toggle-btn");
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+
+
+                const description = btn.parentElement.nextElementSibling;
+
+                description.classList.toggle("hidden")
+
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
