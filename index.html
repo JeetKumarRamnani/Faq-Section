@@ -73,14 +73,17 @@
         buttons.forEach((btn) => {
             btn.addEventListener("click", () => {
                 const paraDes = document.querySelectorAll("p")
+                const description = btn.parentElement.nextElementSibling;
+                if (description.classList.contains("hidden")) {
+                    for (let indPara of paraDes) {
 
-                for (let indPara of paraDes) {
+                        indPara.classList.add("hidden")
 
-                    indPara.classList.add("hidden")
+                    }
                 }
 
 
-                const description = btn.parentElement.nextElementSibling;
+
 
                 description.classList.toggle("hidden")
 
@@ -89,6 +92,7 @@
 
         })
     </script>
+
 
 </body>
 
